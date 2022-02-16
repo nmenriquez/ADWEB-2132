@@ -1,0 +1,117 @@
+
+
+<div>
+ <app-gradebook></app-gradebook>
+</div>
+<!--  
+<h1>{{ appName }} </h1>
+<h2>{{ header1 }}</h2>
+
+
+
+<p>Given the Numbers 70 and 30, Compute for the following:</p>
+<p>The Sum of {{n1}} and {{n2}} is {{n1 + n2}}</p>
+<p>The Difference of {{n1}} and {{n2}} is {{n1 - n2}}</p>
+<p>The Product of {{n1}} and {{n2}} is {{n1 * n2}}</p>
+<p>The Quotient of {{n1}} and {{n2}} is {{n1 / n2}}</p>
+
+
+
+
+
+<input type = 'text' [value] = "clientName">
+<p [style.color] = "myColor"> Text color is style using style binding.</p>
+
+
+
+
+<p [class]= "appliedCSSClass">This line applied the style binding</p>
+<p [class.blue] = 'notapplieCSSClass'>While this line does not</p>
+
+<h3>Two-way Data Binding</h3>
+<button (click) = "showData($event)">Click Me!</button>
+<button on-click = "showData($event)">Click Me To!!</button>
+
+<p>Using Keyup, Keydown, Blur, Mouse Actions</p>
+
+<input type = "text" #keyupbox placeholder="Keyup box" (keyup) = getData(keyupbox.value)/>
+<br>
+<input type = "text" #keydownbox placeholder="Keydown box" (keydown) = getData(keydownbox.value)/>
+<br>
+<input type = "text" #keyblurbox placeholder="Keyblur box" (blur) = getData(keyblurbox.value)/>
+<br>
+<input type = "text" #keyinputbox placeholder="Input box" (input) = getData(keyinputbox.value)/>
+
+<br>
+<h2 (mouseover)="getData('mouse over')">Hover your mouse on this text!</h2>
+<h2 (mouseleave)="getData('mouse left')">Hover your mouse on this text and leave!</h2>
+-->
+
+
+
+
+
+<!--  
+<h1>ngIf</h1>
+<div *ngIf=true>Enriquez, Normalito III M. [WD-301]</div>
+<div *ngIf=false>This text will not print</div>
+
+<h1>ngIfElse</h1>
+<div *ngIf="isLogIn; else isLogOut">You're Logged in</div>
+<ng-template #isLogOut>You're Logged out</ng-template>
+<div *ngIf="false; else isLogOut">You're Logged in</div>
+<ng-template #isLogOut>You're Logged out</ng-template>
+
+<h1>ngFor</h1>
+<ul>
+  <li *ngFor="let x of list">{{x}}</li>
+</ul>
+<ul>
+  <li *ngFor="let y of studentArr trackBy: trackByData">{{y.name}}</li>
+</ul>
+<table class="table table-striped table-bordered" border="1">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Role</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let z of user">
+      <td>{{z.firstName}} {{z.lastName}}</td>
+      <td>{{z.email}}</td>
+      <td>{{z.role}}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h1>ngSwitch</h1>
+<ul [ngSwitch]="logInName">
+  <li *ngSwitchCase="'user'"><p>User is logged in</p></li>
+     <li *ngSwitchCase="'admin'"><p>Admin is logged in</p></li>
+  <li *ngSwitchDefault><p>Please choose login name</p></li>
+</ul>
+
+<ul [ngSwitch]="logInName2">,
+  <li *ngSwitchCase="'user'"><p>User is logged in</p></li> 
+  <li *ngSwitchCase="'admin'"><p>Admin is logged in</p></li> 
+  <li *ngSwitchDefault><p>Please choose login name</p></li>
+</ul>
+
+<ul [ngSwitch]="'test'">
+<li *ngSwitchCase="'user'">
+  <p>User is logged in</p>
+</li>
+<li *ngSwitchCase="'admin'">
+  <p>Admin is logged in</p>
+</li>
+<li *ngSwitchDefault>
+  <p>Please choose login name</p>
+</li>
+</ul>
+-->
+
+
+

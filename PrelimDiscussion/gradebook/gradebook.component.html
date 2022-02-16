@@ -1,0 +1,118 @@
+
+<div style="background-color: gray;">
+    <nav class="navbar navbar-expand-lg navbar-light " >
+      <a class="navbar-brand" style="color: black; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin-left: 10px;" href="#"><b>Holy Angel University</b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" style="color: black;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" href="#adweb"><b>ADWEB</b> <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: black;" href="#appdev"><b>APPDEV</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" href="#cloud"><b>CLOUD</b></a>
+          </li>
+        
+        </ul>
+      </div>
+    </nav>
+    </div>
+<div style="background-color: rgb(126, 126, 137);">
+<div id="adweb" style="background-color: rgb(175, 166, 169); width: 50%; border-radius: 4px; margin-left: 25%;">
+    <br>
+<h2 style="text-align:center ;"><b>Advanced Dynamic Web Applications</b></h2>
+<div id="content" style="margin-left: 20px; margin-right: 20px;">
+
+<p style="font-family: Tahoma;"><b>Student Name :</b> <input type="text" style="border-radius: 4px; border: 2px solid rgb(174, 174, 174); width: 100%;" [(ngModel)] = "userName" placeholder="Enter Student Name"/></p>
+<p style="font-family: Tahoma;"><b>Student Number :</b> <input type="text" style="border-radius: 4px; border: 2px solid rgb(174, 174, 174); width: 100%" [(ngModel)] = "studentnumber" placeholder="Enter Student Number"/></p>
+
+<p style="font-family: Tahoma;;" ><b>Student Prelim Grade</b><input type="number"  [(ngModel)] = "prelim" class="form-control" placeholder="Enter Prelim Grade " />
+</p>
+
+<p style="font-family: Tahoma;"><b>Student Midterm Grade</b><input type="number"  [(ngModel)] = "midterm" class="form-control" placeholder="Enter Midterm Grade" /></p>
+
+<p style="font-family: Tahoma;"><b>Student Final Grade</b><input type="number" [(ngModel)] = "final" class="form-control" placeholder="Enter Final Grade" /></p>
+
+
+<br><br>
+<h3 style="font-family: Tahoma;text-align: center;"><b>Student Information</b></h3>
+<p style="font-family: Tahoma;"><b>Name : {{userName}}</b></p>
+<p style="font-family: Tahoma;"><b>Student Number : {{studentnumber}}</b></p>
+<p style="font-family: Tahoma;"><b>Prelim Grade : {{prelim}}</b></p>
+<p style="font-family: Tahoma;"><b>Midterm Grade : {{midterm}}</b></p>
+<p style="font-family: Tahoma;"><b>Final Grade : {{final}}</b></p>
+<p style="font-family: Tahoma;"s><b>Computed Average :{{(prelim+midterm+final)/3}}</b></p>
+
+<p><b>Hi {{userName}}, your Computed Average for Advanced Dynamic Web Applications is {{(prelim+midterm+final)/3}}</b></p>
+<br>
+</div>
+</div>
+
+<br><br><br>
+<div id="appdev" style="background-color: rgb(175, 166, 169); width: 50%; border-radius: 4px; margin-left: 25%;">
+    <br>
+<h2 style="text-align:center ;"><b>Applications Development and Emerging Technologies</b></h2>
+<div id="content" style="margin-left: 20px; margin-right: 20px;">
+
+<p style="font-family: Tahoma;"><b>Student Name :</b> <input type="text" style="border-radius: 4px; border: 2px solid rgb(174, 174, 174); width: 100%;" [(ngModel)] = "userName1" placeholder="Enter Student Name"/></p>
+<p style="font-family: Tahoma;"><b>Student Number :</b> <input type="text" style="border-radius: 4px; border: 2px solid rgb(174, 174, 174); width: 100%" [(ngModel)] = "studentnumber1" placeholder="Enter Student Number"/></p>
+
+<p style="font-family: Tahoma;;" ><b>Student Prelim Grade</b><input type="number"  [(ngModel)] = "prelim1" class="form-control" placeholder="Enter Prelim Grade " />
+</p>
+
+<p style="font-family: Tahoma;"><b>Student Midterm Grade</b><input type="number"  [(ngModel)] = "midterm1" class="form-control" placeholder="Enter Midterm Grade" /></p>
+
+<p style="font-family: Tahoma;"><b>Student Final Grade</b><input type="number" [(ngModel)] = "final1" class="form-control" placeholder="Enter Final Grade" /></p>
+
+
+<br><br>
+<h3 style="font-family: Tahoma;text-align: center;"><b>Student Information</b></h3>
+<p style="font-family: Tahoma;"><b>Name : {{userName1}}</b></p>
+<p style="font-family: Tahoma;"><b>Student Number : {{studentnumber1}}</b></p>
+<p style="font-family: Tahoma;"><b>Prelim Grade : {{prelim1}}</b></p>
+<p style="font-family: Tahoma;"><b>Midterm Grade : {{midterm1}}</b></p>
+<p style="font-family: Tahoma;"><b>Final Grade : {{final1}}</b></p>
+<p style="font-family: Tahoma;"s><b>Computed Average :{{(prelim1+midterm1+final1)/3}}</b></p>
+
+<p><b>Hi {{userName1}}, your Computed Average for Applications Development and Emerging Technologies is {{(prelim1+midterm1+final1)/3}}</b></p>
+<br>
+</div>
+</div>
+
+<br><br><br>
+<div id="cloud" style="background-color: rgb(175, 166, 169); width: 50%; border-radius: 4px; margin-left: 25%;">
+    <br>
+<h2 style="text-align:center ;"><b>Cloud Computing</b></h2>
+<div id="content" style="margin-left: 20px; margin-right: 20px;">
+
+<p style="font-family: Tahoma;"><b>Student Name :</b> <input type="text" style="border-radius: 4px; border: 2px solid rgb(174, 174, 174); width: 100%;" [(ngModel)] = "userName2" placeholder="Enter Student Name"/></p>
+<p style="font-family: Tahoma;"><b>Student Number :</b> <input type="text" style="border-radius: 4px; border: 2px solid rgb(174, 174, 174); width: 100%" [(ngModel)] = "studentnumber2" placeholder="Enter Student Number"/></p>
+
+<p style="font-family: Tahoma;;" ><b>Student Prelim Grade</b><input type="number"  [(ngModel)] = "prelim2" class="form-control" placeholder="Enter Prelim Grade " />
+</p>
+
+<p style="font-family: Tahoma;"><b>Student Midterm Grade</b><input type="number"  [(ngModel)] = "midterm2" class="form-control" placeholder="Enter Midterm Grade" /></p>
+
+<p style="font-family: Tahoma;"><b>Student Final Grade</b><input type="number" [(ngModel)] = "final2" class="form-control" placeholder="Enter Final Grade" /></p>
+
+
+<br><br>
+<h3 style="font-family: Tahoma;text-align: center;"><b>Student Information</b></h3>
+<p style="font-family: Tahoma;"><b>Name : {{userName2}}</b></p>
+<p style="font-family: Tahoma;"><b>Student Number : {{studentnumber2}}</b></p>
+<p style="font-family: Tahoma;"><b>Prelim Grade : {{prelim2}}</b></p>
+<p style="font-family: Tahoma;"><b>Midterm Grade : {{midterm2}}</b></p>
+<p style="font-family: Tahoma;"><b>Final Grade : {{final2}}</b></p>
+<p style="font-family: Tahoma;"s><b>Computed Average :{{(prelim2+midterm2+final2)/3}}</b></p>
+
+<p><b>Hi {{userName2}}, your Computed Average for Cloud Computing is {{(prelim2+midterm2+final2)/3}}</b></p>
+<br>
+</div>
+</div>
+</div>
+
+<footer><p style="text-align: center; background-color: gray; font-size: 12px;">Copyright © 2022 Enriquez All Rights Reserved</p></footer>
