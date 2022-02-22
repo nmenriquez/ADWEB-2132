@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="..//product-detail/product-detail.component.css">
+<h2 style="font-family: Arial, Helvetica, sans-serif;">Product Details</h2>
+
+<table>
+<tr *ngFor="let Product of Products">
+    <td>{{Product.id}}</td>
+    <td>{{Product.name}}</td>
+    <td>{{Product.description}}</td>
+</tr>
+</table>
